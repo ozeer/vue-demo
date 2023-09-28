@@ -1,0 +1,22 @@
+{
+  "name": "vue-demo",
+  "version": "1.0.0",
+  "description": "a demo about node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index",
+    "dev:cjs": "node src/cjs/index.cjs",
+    "dev:esm": "node src/esm/index.mjs",
+    "serve": "node server/index.js",
+    "dev:ts": "ts-node src/ts/index.ts"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "zy",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
