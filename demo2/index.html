@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test</title>
+		<script src="vue3.js"></script>
+	</head>
+	<body>
+		<div id="app">
+            <p>{{name}}</p>
+            <p>{{num}}</p>
+        </div>
+		<script>
+            // 配置对象
+			const Counter = {
+            data: function() {
+                return {
+                    num: 0,
+                    name: "Jean"
+                }
+			}
+        }
+        // 创建应用，将配置对象传入
+        let app = Vue.createApp(Counter).mount("#app")
+        console.log(app);
+        
+		</script>
+	</body>
+</html>
